@@ -100,7 +100,7 @@ console.log(message);   */
 var a1 =["Aditya", "Jasim","Rahul"];
 var a2 =["Rohan","Rohit"];
 var combine=a2[Symbol.iterator]();
-a2.map(v=>{
+a2.map(()=>{
     a1=[...a1,combine.next().value];
 })
 console.log(a1);     */
