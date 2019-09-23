@@ -1,13 +1,28 @@
-/* 
+
  //answer 1
+/*
+const isEqual =(ob1, ob2)=>{
+    const ob1Keys = Object.keys(ob1);
+    const ob2Keys = Object.keys(ob2);
 
-let obj = {name : "Jasim", class : 12};
+    if(ob1Keys.length !== ob1Keys.length){
+        return false;
+    }
 
-let src = {name : "Jasim", class : 12};
+    for(let obKey of ob1Keys){
+        if(ob1[obKey] !==ob2[obKey]){
+            return false;
+        }
+    }
+    return true;
+};
+const ob1 ={
+    name:"Jasim", class:12,
+    //credit:10
+};
+const ob2 ={name:"Jasim", class:12 };
 
-const matches = (obj, src) => Object.keys(src).every(key => obj.hasOwnProperty(key) && obj[key] === src[key]);
-let y = matches(obj, src);
-console.log(y);      */
+console.log(isEqual(ob1, ob2));       */
 
 
 
@@ -65,7 +80,6 @@ console.log(a, b);
 
 var [a,...b] =array;
 console.log(a, b);   */
-
 
 
 /*
